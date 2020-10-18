@@ -41,8 +41,6 @@ def TODOLIST(request):
         q=task_class(item=task,todo_pred=pred,True_pred=pred)
         q.save()
         
-        
-
         return render(request, 'testpredict/home2.html', {'all_items': all_items})
   else:
       #all_items = List.objects.all
